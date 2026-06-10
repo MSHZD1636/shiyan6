@@ -29,7 +29,11 @@ export struct Led {
       .justifyContent(FlexAlign.Center)
     }
     .onReady((context: NavDestinationContext) => {
-      this.settings = context.pathInfo.param as Settings;
+      // 获取页面跳转时携带的参数，做空值保护后再赋值（适配 6.0.2 严格类型校验）
+      const param = context.pathInfo.param as Settings;
+      if (param) {
+        this.settings = param;
+      }
     }) // NavDestination内组件开始加载前执行，可以得到组件上下文信息，并获取到页面跳转时携带的参数
     .width('100%')
     .height('100%')
