@@ -1,0 +1,48 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "page_bg",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "card_bg",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "title_color",
+      "value": "#333333"
+    },
+    {
+      "name": "subtitle_color",
+      "value": "#888888"
+    },
+    {
+      "name": "button_bg",
+      "value": "#E0E0E0"
+    },
+    {
+      "name": "button_text",
+      "value": "#333333"
+    },
+    {
+      "name": "button_active",
+      "value": "#2196F3"
+    },
+    {
+      "name": "play_btn_color",
+      "value": "#4CAF50"
+    },
+    {
+      "name": "pause_btn_color",
+      "value": "#FF9800"
+    },
+    {
+      "name": "stop_btn_color",
+      "value": "#F44336"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "媒体播放"
+    },
+    {
+      "name": "home_title",
+      "value": "媒体功能演示"
+    },
+    {
+      "name": "video_nav_btn",
+      "value": "🎬 视频"
+    },
+    {
+      "name": "audio_nav_btn",
+      "value": "🎵 音频"
+    },
+    {
+      "name": "ai_nav_btn",
+      "value": "🤖 交互"
+    },
+    {
+      "name": "video_page_title",
+      "value": "视频播放"
+    },
+    {
+      "name": "audio_page_title",
+      "value": "音频播放"
+    },
+    {
+      "name": "video1_btn",
+      "value": "视频一"
+    },
+    {
+      "name": "video2_btn",
+      "value": "视频二"
+    },
+    {
+      "name": "play_btn",
+      "value": "播放"
+    },
+    {
+      "name": "pause_btn",
+      "value": "暂停"
+    },
+    {
+      "name": "stop_btn",
+      "value": "停止"
+    },
+    {
+      "name": "status_playing",
+      "value": "▶ 播放中"
+    },
+    {
+      "name": "status_stopped",
+      "value": "■ 已停止"
+    },
+    {
+      "name": "audio_filename",
+      "value": "test01.mp3"
+    }
+  ]
+}
