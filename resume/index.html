@@ -35,12 +35,13 @@
     border-bottom:1px solid var(--line);
   }
   .avatar{
-    width:96px;height:96px;border-radius:50%;margin:0 auto 16px;
-    display:flex;align-items:center;justify-content:center;
-    font-size:38px;font-weight:700;color:#0f1419;
+    width:104px;height:104px;border-radius:50%;margin:0 auto 16px;
+    overflow:hidden;
     background:linear-gradient(135deg,var(--accent),var(--accent2));
     box-shadow:0 10px 30px rgba(54,209,220,.35);
+    border:3px solid rgba(255,255,255,.18);
   }
+  .avatar svg{display:block;width:100%;height:100%;}
   .hero h1{font-size:34px;letter-spacing:4px;}
   .hero .dir{
     display:inline-block;margin-top:10px;padding:5px 16px;border-radius:20px;
@@ -130,7 +131,51 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="avatar">梅</div>
+    <div class="avatar">
+      <svg viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#5b86e5"/>
+            <stop offset="1" stop-color="#36d1dc"/>
+          </linearGradient>
+          <clipPath id="round"><circle cx="52" cy="52" r="52"/></clipPath>
+        </defs>
+        <g clip-path="url(#round)">
+          <rect width="104" height="104" fill="url(#bg)"/>
+          <!-- shoulders / shirt -->
+          <path d="M16 104c0-19 16-30 36-30s36 11 36 30z" fill="#22324a"/>
+          <path d="M16 104c0-19 16-30 36-30s36 11 36 30z" fill="none"/>
+          <!-- collar -->
+          <path d="M42 80l10 11 10-11-10-4z" fill="#e8eef6"/>
+          <path d="M52 91l-4 13h8z" fill="#36d1dc"/>
+          <!-- neck -->
+          <rect x="45" y="64" width="14" height="16" rx="6" fill="#e8b38a"/>
+          <!-- head -->
+          <ellipse cx="52" cy="46" rx="20" ry="22" fill="#f1c5a0"/>
+          <!-- ears -->
+          <circle cx="32" cy="47" r="4" fill="#f1c5a0"/>
+          <circle cx="72" cy="47" r="4" fill="#f1c5a0"/>
+          <!-- hair -->
+          <path d="M31 44c-1-16 11-26 21-26s22 9 21 26c-3-6-6-9-9-10-2 5-7 7-13 7-5 0-8-1-10-3-3 2-7 6-10 6z" fill="#2b2b35"/>
+          <!-- glasses -->
+          <g stroke="#2b2b35" stroke-width="2" fill="rgba(255,255,255,.12)">
+            <rect x="36" y="42" width="13" height="10" rx="5"/>
+            <rect x="55" y="42" width="13" height="10" rx="5"/>
+            <line x1="49" y1="46" x2="55" y2="46"/>
+          </g>
+          <!-- eyes -->
+          <circle cx="42.5" cy="47" r="1.8" fill="#2b2b35"/>
+          <circle cx="61.5" cy="47" r="1.8" fill="#2b2b35"/>
+          <!-- eyebrows -->
+          <path d="M38 39q4-2 8 0" stroke="#2b2b35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M58 39q4-2 8 0" stroke="#2b2b35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <!-- nose -->
+          <path d="M52 49v5l-2 1" stroke="#d9a577" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <!-- smile -->
+          <path d="M46 58q6 5 12 0" stroke="#c97b5a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
     <h1>梅晠辉</h1>
     <div class="dir">报考方向：计算机科学与技术 / 人工智能</div>
     <div class="contact">
